@@ -5,32 +5,27 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      overflow-y: hidden; /* Prevent vertical scroll */
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
     }
 
     .table-wrapper {
-      background-color: black;
-      color: white;
       padding: 20px;
-      font-family: Arial, sans-serif;
-      .table-wrapper {
-  max-height: none;
-  height: auto;
-  overflow-y: auto;
+      overflow-x: auto; /* Enables horizontal scroll on small screens */
     }
 
     table {
       width: 100%;
+      min-width: 800px;
       border-collapse: collapse;
       text-align: center;
-      min-width: 800px;
     }
 
     th, td {
-      color: white;
       padding: 5px;
       font-size: 13px;
+      color: white;
     }
 
     tbody tr:nth-child(odd) {
